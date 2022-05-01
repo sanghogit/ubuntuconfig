@@ -1,0 +1,27 @@
+# terminal
+#printf '\e[4 q'  # _ cursor
+#printf '\e[1 q'  # _ cursor
+
+# alias
+alias ll='ls -alFtr'
+alias h='history'
+alias gs="git status -s"
+alias gl="git log --all --decorate --oneline --graph"
+alias vbug='ssh -R 3128:localhost:3128 vbug@localhost -p9999'
+vbugcp() { scp -P 9999 "$1" vbug@localhost:/home/vbug/gz/; }
+
+# path
+export PATH="$PATH:$HOME/usr/bin:$HOME/local/bin:$HOME/sbin"
+
+# readline
+set -o ignoreeof  # ignore ctrl-d
+#   cmd line vi mode
+set -o vi
+bind '"jj":"\e"'
+bind 'set show-all-if-ambiguous on'
+
+# ssh tunnel
+# export http_proxy=http://127.0.0.1:3128
+# export https_proxy=http://127.0.0.1:3128
+# export no_proxy=127.0.0.1,localhost,10.*.*.*,samsungds.net,samsung.net
+
