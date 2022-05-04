@@ -1,0 +1,4 @@
+set editing-mode vi
+"jj": vi-movement-mode
+"\C-p": history-search-backward
+set show-all-if-ambiguous on

@@ -16,9 +16,9 @@ export PATH="$PATH:$HOME/usr/bin:$HOME/local/bin:$HOME/sbin"
 # readline
 set -o ignoreeof  # ignore ctrl-d
 #   cmd line vi mode
-set -o vi
-bind '"jj":"\e"'
-bind 'set show-all-if-ambiguous on'
+#set -o vi
+#bind '"jj":"\e"'
+#bind 'set show-all-if-ambiguous on'
 
 # ssh tunnel
 # export http_proxy=http://127.0.0.1:3128
